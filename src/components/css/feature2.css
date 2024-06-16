@@ -1,0 +1,61 @@
+.feature-2-container {
+  width: 100%;
+  max-height: 400px;
+  display: flex;
+  align-items: center;
+  border-radius: 0 9.92rem 0 9.92rem;
+  padding-left: 11.56%;
+  margin-top: 5.8rem;
+  background: linear-gradient(
+    45deg,
+    hsl(237deg 18% 21%) 0%,
+    hsl(237deg 21% 26%) 50%,
+    hsl(237deg 23% 32%) 100%
+  );
+  position: relative; /* Ensure the pseudo-element is positioned relative to this container */
+}
+
+.feature-2-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+
+  right: 40%;
+  width: 100%;
+  height: 100%;
+  background: url("../../assets/images/bg-pattern-circles.svg") no-repeat;
+  transform: rotate(180deg);
+  z-index: 0; /* Ensure it is behind the content of the container */
+}
+
+.feature-2-container > * {
+  position: relative; /* Ensure the content inside the container is above the pseudo-element */
+  z-index: 1;
+}
+.feature-2.text > div {
+  max-width: 720px;
+  width: 74%;
+  
+}
+.feature-2.text > div > p {
+  
+  color: var(--neutral-white);
+}
+.feature-2-img {
+  max-width: 600px;
+  width: 100%;
+}
+@media (width < 1080px) {
+  .feature-2-container {
+    flex-direction: column;
+    min-height: 650px;
+    justify-content: center;
+    margin-block: 15rem;
+    padding-bottom: 9rem;
+  }
+  .feature-2.text > div {
+    text-align: center;
+    margin: 3rem auto;
+    width: 90%;
+  }
+}

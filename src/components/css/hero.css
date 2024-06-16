@@ -1,0 +1,60 @@
+/* hero styles */
+.hero-nav-container {
+  width: 100%;
+  min-height: 60rem;
+  background: url("../../assets/images/bg-pattern-intro-desktop.svg"),
+    linear-gradient(
+      290deg,
+      hsl(353deg 100% 62%) 0%,
+      hsl(3deg 100% 67%) 40%,
+      hsl(13deg 100% 72%) 100%
+    );
+  background-repeat: no-repeat;
+  background-size: 220.5%;
+  background-position-x: 25.3%;
+  background-position-y: 52.16%;
+  border-radius: 0 0 0 9.92rem;
+  padding: 4.3% 11.56%;
+}
+
+.hero-container {
+  margin-top: 13.3rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1;
+
+}
+.hero-text-container > p {
+  color: var(--neutral-white); 
+}
+.hero-links-container{
+    display: flex;
+    gap: 1.7rem;
+    margin-top: 4.8rem;
+    justify-content: center;
+}
+@media (width < 720px) {
+  .hero-nav-container{
+    background: url("../../assets/images/bg-pattern-intro-mobile.svg"),
+    linear-gradient(
+      45deg,
+      hsl(353deg 100% 62%) 0%,
+      hsl(3deg 100% 67%) 40%,
+      hsl(13deg 100% 72%) 100%
+    );
+    background-size: 450%;
+    background-position-x: 40%;
+    background-position-y: 35%;
+    border-radius: 0 0 0 6.2rem;
+  }
+  h1{
+    font-size: 4rem;
+  }
+  .hero-nav-container{
+    padding: 8.1%;
+  }
+  
+
+}
